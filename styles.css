@@ -2,10 +2,6 @@
   margin: 0;
   padding: 0%;
 }
-title {
-  color: #ffffff;
-  font-family: "Courier New", Courier, monospace;
-}
 
 body {
   color: #ffffff;
@@ -129,7 +125,7 @@ main {
   text-decoration: none;
 }
 
-a:hover {
+#titulo a:hover {
   color: #aa9622;
   font-size: 45px;
 }
