@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0%;
 }
+title {
+  color: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+}
 
 body {
   color: #ffffff;
@@ -22,7 +26,7 @@ main {
   border-top-right-radius: 12px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  margin-top: 15%;
+  margin-top: 5%;
   width: 80%;
   height: 300px;
   background-color: #16101d;
@@ -67,20 +71,57 @@ main {
   align-items: center;
 }
 
-#cuando h2 {
+#cuando a {
+  font-family: "Rowdies", sans-serif;
+  font-weight: bold;
   font-size: 30px;
   margin-bottom: 10px;
   margin-top: 10px;
   color: #d47429;
+  text-decoration: none;
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400%;
+  animation: rainbowShift 5s linear infinite;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
 }
-#donde h2 {
+#donde a {
+  font-family: "Jua", sans-serif;
+  font-weight: bold;
   font-size: 30px;
   margin-bottom: 10px;
   margin-top: 10px;
   color: #d47429;
+  text-decoration: none;
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400%;
+  animation: rainbowShift 5s linear infinite;
 }
 
-a {
+#titulo a {
   font-family: "Times New Roman", Times, serif;
   font-size: 40px;
   margin-bottom: 10px;
@@ -113,7 +154,7 @@ a:hover {
   font-size: 12px;
   margin-bottom: 10px;
   margin-top: 10px;
-  color: #d47429#aa9622;
+  color: #d47429;
 }
 
 #footer a:hover {
@@ -160,5 +201,89 @@ a:hover {
   #footer p {
     font-size: 12px;
     text-align: center;
+  }
+  .emoji-float {
+    border: #d4732900 30px;
+    font-size: smaller;
+    width: 40vw;
+    height: 10vh;
+  }
+
+  .emoji-float::before {
+    font-size: clamp(1.5rem, 5vw, 4rem);
+  }
+  * {
+    overflow-x: hidden;
+  }
+  /* Animaciones */
+  @keyframes floatLeft {
+  }
+
+  @keyframes floatRight {
+  }
+}
+.emoji-float {
+  margin-top: 10%;
+  color: #d47429;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+/* Emoji izquierda */
+.emoji-float::before {
+  content: "🍺";
+  position: absolute;
+  top: -20px;
+  left: -25px;
+  font-size: 1.5em;
+  animation: floatLeft 3s infinite ease-in-out;
+  pointer-events: no;
+}
+
+/* Emoji derecha */
+.emoji-float::after {
+  content: "🍾";
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  font-size: 1.5em;
+  animation: floatRight 3s infinite ease-in-out;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Animaciones */
+@keyframes floatLeft {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-15px) rotate(20deg);
+    opacity: 1;
+  }
+}
+
+@keyframes floatRight {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-10px) rotate(-10deg);
+    opacity: 0.5;
+  }
+}
+@keyframes rainbowShift {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
   }
 }
