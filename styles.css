@@ -302,7 +302,7 @@ main {
   0%,
   100% {
     transform: translateY(0px) rotate(0deg);
-    opacity: 0.6;
+    opacity: 0.5;
   }
   50% {
     transform: translateY(-15px) rotate(20deg);
@@ -313,7 +313,7 @@ main {
   0%,
   100% {
     transform: translateY(0px) rotate(0deg);
-    opacity: 0.6;
+    opacity: 0.5;
   }
   50% {
     transform: translateY(-20px) rotate(20deg);
@@ -324,22 +324,22 @@ main {
   0%,
   100% {
     transform: translateY(0px) rotate(0deg);
-    opacity: 1;
+    opacity: 0.5;
   }
   50% {
     transform: translateY(-20px) rotate(-20deg);
-    opacity: 0.5;
+    opacity: 1;
   }
 }
 @keyframes floatRight {
   0%,
   100% {
     transform: translateY(0px) rotate(0deg);
-    opacity: 1;
+    opacity: 0, 5;
   }
   50% {
     transform: translateY(-10px) rotate(-10deg);
-    opacity: 0.5;
+    opacity: 1;
   }
 }
 @keyframes rainbowShift {
