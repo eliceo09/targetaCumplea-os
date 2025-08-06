@@ -71,7 +71,7 @@ main {
   border-top-right-radius: 12px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  margin-top: 5%;
+  margin-top: 10px;
   width: 60%;
   height: 650px;
   background: radial-gradient(#16101d 50%, #0f0b13 100%);
